@@ -1,0 +1,4 @@
+ibmcloud_api_key    = "your-ibm-cloud-api-key"
+region              = "us-south"
+environment         = "prod"
+resource_group_name = "aare-ai"
