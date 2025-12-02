@@ -35,11 +35,7 @@ aare-watsonx/
 ├── app.py                       # Flask application entry point
 ├── Dockerfile                   # Container image definition
 ├── handlers/
-│   ├── __init__.py
-│   ├── llm_parser.py            # LLM output text parser
-│   ├── formula_compiler.py      # Compile JSON formulas to Z3
-│   ├── ontology_loader.py       # Loads rules from IBM COS
-│   └── smt_verifier.py          # Z3 theorem prover engine
+│   └── __init__.py
 ├── ontologies/                  # Compliance rule definitions
 ├── infra/
 │   ├── main.tf                  # Terraform infrastructure
@@ -51,6 +47,9 @@ aare-watsonx/
 ├── LICENSE
 └── README.md
 ```
+
+> **Note:** The core verification engine (LLMParser, SMTVerifier, FormulaCompiler, OntologyLoader)
+> is provided by the [aare-core](https://github.com/aare-ai/aare-core) package.
 
 ## Local Development
 
