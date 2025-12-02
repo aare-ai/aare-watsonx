@@ -5,8 +5,8 @@ gunicorn==21.2.0
 # IBM Cloud Object Storage
 ibm-cos-sdk==2.13.4
 
-# Core verification engine
-z3-solver==4.15.4.0
+# Core verification engine (shared across all cloud deployments)
+aare-core>=0.1.0
 
 # Data processing
 pydantic==2.5.3
